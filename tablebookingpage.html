@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Booking</title>
+    <link rel="stylesheet" href="tablebookingpage.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="trademark">
+            <img src="https://gshotcoffeeroastery.com/cdn/shop/files/GShot_Logo_Horizontal_Text_with_Logo_TM_632x.png?v=1631518719"
+                width="189px">
+        </div>
+        <nav class="list">
+            <ul class="items">
+                <li class="li"><a href="front page.html" class="lif">Home</a></li>
+                <li class="li"><a href="menu.html" class="lif">Menu</a></li>
+                <li class="li"><a href="products.html" class="lif">Products</a></li>
+                <li class="li"><a href="tablebookingpage.html" class="lif">Table Booking</a></li>
+            </ul>
+        </nav>
+        <div class="icon1" id="icon1">
+            <div><img src="images/personicon.png" width="27px" id="icon1img"></div>
+           
+                <form class="loginformcontainer" id="loginformcontainer">
+                    <div class="loginhead">Login Form</div>
+                    <div class="logincross" id="logincross"><img src="images/wrong (1).png" width="32px"></div>
+                    <label for="emailorphone" class="emailorphonelable">Email or Phone</label>
+                    <input type="email" class="emailorphoneinput" required>
+                    <label for="loginpass" class="loginpasslable">Password</label>
+                    <input type="password" class="loginpassinput" required>
+                    <a href="#" class="forgotpass">Forgot Password ?</a>
+                    <button type="submit" class="loginbtn" id="loginbtn">Login</button>
+                    <!-- <p class="notmember">Not a member ?</p> -->
+                    <!-- <a href="#" class="signup" id="signup">signup now</a> -->
+                </form>
+           
+        </div>
+        <div class="icon2" id="icon2">
+            <div><img src="images/magnifyingglassicon.png" width="23px"></div>
+        </div>
+        <div class="icon3" id="icon3">
+            <div><img src="images/carticon.png" width="23px"></div>
+        </div>
+        <div class="popupcontainer" id="popupcontainer">
+            <div class="sidepopup">
+                <img class="cartcrossbtn" id="cartcrossbtn" src="images/wrong (2).png" width="35px" alt="">
+                <p>Your Cart is Empty</p>
+            </div>
+        </div>
+    </div>
+    <div >
+        <img src="images/booktable1.jpg" alt="" class="booktable1img">
+    </div>
+    <div >
+        <img src="images/booktable1.jpg" alt="" class="booktable2img">
+    </div>
+
+    <div class="formcontainer">
+        <form action="" class="tablebookingform">
+            <div class="tablelogo">
+                <img src="https://gshotcoffeeroastery.com/cdn/shop/files/GShot_Logo_Horizontal_Text_with_Logo_TM_632x.png?v=1631518719"
+                    width="189px">
+            </div>
+            <label for="name">Name</label>
+            <input type="text" name="" id="name" placeholder="Enter Your Name" required><br>
+            <label for="email">Email</label>
+            <input type="email" name="" id="email" placeholder="Enter your Email" required><br>
+            <label for="number">Phone number</label>
+            <input type="tel" name="" id="number" placeholder="Enter your Number" required><br>
+            <label for="seats">No. of Seats</label>
+            <select name="" id="seats">
+                <option value="">Select</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">4+</option>
+            </select><br>
+            <label for="date">Date</label>
+            <input type="date" id="date" required><br>
+            <span>Time</span>
+            <label for="fromtime" class="fromtime">From-</label>
+            <input type="time" id="fromtime">
+            <label for="totime" class="totime">To-</label>
+            <input type="time" id="totime"><br>
+            <div class="container">
+                <input type="submit" value="Book" onclick="openPopup()" id="bookbutton" >
+                <!-- <div class="popup" id="popup">
+                    <img src="images/check.png" alt="">
+                    <h2>Thank You!</h2>
+                    <p>Your details has been submitted successfully. Thanks!</p>
+                    <button type="button" onclick="closePopup()">OK</button>
+                </div> -->
+            </div>
+            
+        </form>
+    </div>
+    <div class="searchpopupcontainer" id="searchpopupcontainer">
+        <input type="text" placeholder="Search here" class="searchhere" id="searchhere">
+    </div>
+    <div class="modaloverlayp" id="modaloverlayp"></div>
+    <script src="tablebookingpage.js"></script>
+
+</body>
+
+</html>

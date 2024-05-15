@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e6e9f0;
+    background-image: url('images/booktable1.jpg');
+    background-size: 10000px;
+    
+}
+.booktable1img{
+
+    padding: 25px;
+    padding-top: 170px;
+}
+.booktable2img{
+    position: absolute;
+    left: 1000px;
+    top: 169px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 10;
+}
+
+.trademark {
+    z-index: 1;
+    position: fixed;
+    left: 162px;
+    padding: 4px;
+}
+
+.list {
+    position: fixed;
+    width: 100%;
+    background-color: #bccbde;
+    padding: 20px;
+}
+
+.li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.lif {
+    color: #80142a;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: Muli, sans-serif;
+    position: relative;
+    left: 500px;
+    font-weight: 700;
+    padding: 10px 4px;
+    letter-spacing: 0;
+}
+
+/* .lif:hover{
+    box-shadow: 0 0 50px #910a0a ;
+} */
+.icon1{
+    position: fixed;
+    left: 1240px;
+    top: 15px;
+    cursor: pointer;
+}
+.icon2{
+    position: fixed;
+    left: 1280px;
+    top: 20px;
+    cursor: pointer;
+}
+.icon3{
+    position: fixed;
+    left: 1316px;
+    top: 20px;
+    cursor: pointer;
+}
+.items {
+    margin-left: -127px;
+}
+.tablebookingform{
+    background-color: #bccbde;
+    width: 422px;
+    height: 550px;
+    position: absolute;
+    top: 17%;
+    left: 33%;
+    padding-left: 45px;
+    line-height: 70px;
+}
+#name{
+    height: 25px;
+    width: 250px;
+    padding-left: 10px;
+    margin-left: 73px;
+}
+#email{
+    height: 25px;
+    width: 250px;
+    padding-left: 10px;
+    margin-left: 74px;
+}
+#number{
+    height: 25px;
+    width: 250px;
+    padding-left: 10px;
+    margin-left: 19px;
+}
+#seats{
+    width: 99px;
+    height: 31px;
+}
+#date{
+    height: 26px;
+    margin-left: 82px;
+}
+.li :hover{
+    color: white;
+    /* text-decoration: underline ; */
+}
+
+#name{
+    border-radius: 6px;
+    border: none;
+}
+#email{
+    border-radius: 6px;
+    border: none;
+}
+#number{
+    border-radius: 6px;
+    border: none;
+}
+#bookbutton{
+    margin-left: 34%;
+    height: 28px;
+    width: 70px;
+    cursor: pointer;
+}
+#bookbutton:hover{
+    background-color: #80142a;
+    color: white;
+}
+.tablelogo{
+    position: relative;
+    left: 96px;
+    width: 190px;
+    margin-top: 10px;
+    height: 58px;
+}
+#seats{
+    border-radius: 6px;
+    border: none;
+    margin-left: 35px;
+    color: rgb(75, 75, 75);
+
+}
+#date{
+    border-radius: 6px;
+    border: none;
+    margin-left: 85px;
+    color: rgb(59, 59, 59);
+}
+.fromtime{
+    margin-left: 57px;
+    color: rgb(25, 25, 25);
+}
+.totime{
+    margin-left: 20px;
+    color: rgb(24, 24, 24);
+}
+#fromtime{
+    border-radius: 5px;
+    border: none;
+}
+#totime{
+    border-radius: 5px;
+    border: none;
+}
+.container{
+    /* width: 100%; */
+    /* height: 100vh; */
+    /* background-color: #3c5077; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.popup img{
+    width: 80px;
+    margin-top: -50%;
+    border-radius: 50%;
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #8b152d;
+    color: #fff;
+    border: 0;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.openpopup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+#bookbutton{
+    margin-left: -60px;
+}
+.searchpopupcontainer{
+    position: fixed;
+    top: 100px;
+    left: 30%;
+    z-index: 5;
+    display: none;
+}
+.searchhere{
+    width: 600px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 7px;
+    outline: none;
+    border: none;
+    
+}
+.modaloverlayp{
+    position: fixed;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+.openedbar{
+    display: block;
+}
+.loginformcontainer{
+    padding: 30px;
+    position: relative;
+    top: 12px;
+    right: 79px;
+    width: 352px;
+    height:325px;
+    background-color: #fff;
+    /* display: flex;
+    flex-direction: column; */
+    align-items: center;
+    font-family: 'Mooli', sans-serif;
+    display: none;
+}
+.loginhead{
+    font-family: 'Mooli', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: #010101;
+    text-align: center;
+}
+.emailorphonelable{
+    font-size: 18px;
+    color: #010101;
+    display: block;
+    font-family: 'Mooli', sans-serif;
+    padding-top:30px;
+}
+.emailorphoneinput{
+    display: block;
+    border: 1px solid silver;
+    height: 37px;
+    border-radius: 4px;
+    width: 280px;
+    padding-right: 30px;
+}
+.loginpasslable{
+    font-size: 18px;
+    color: #010101;
+    display: block;
+    font-family: 'Mooli', sans-serif;
+    padding-top:20px;
+}
+.loginpassinput{
+    display: block;
+    border: 1px solid silver;
+    height: 37px;
+    border-radius: 2px;
+    width: 280px;
+    padding-right: 30px;
+}
+
+.forgotpass{
+    text-decoration: none;
+    color: #010101;
+    display: block;
+    padding-top: 8px;
+    
+}
+.forgotpass:hover{
+    text-decoration: underline #010101;
+}
+.loginbtn{
+    position: relative;
+    height: 37px;
+    width: 311px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: -webkit-linear-gradient(right, #2d3131, #0f0d10, #65dde8, #033a3e);
+    margin-top: 17px;
+}
+.loginbtn:hover{
+    background: -webkit-linear-gradient(right, #033a3e, #65dde8, #0f0d10, #2d3131);
+    transition: all 0.4s;
+}
+.notmember{
+    position: relative;
+    padding-top: 18px;
+    left: 98px;
+}
+.signup{
+    position: relative;
+    padding-top: 12px;
+    left: 110px;
+}
+.signup:hover{
+    color: #80142a;
+}
+.logincross{
+    position: absolute;
+    left: 13px;
+    bottom: 335px;
+}
+.openedlogin{
+    display: block;
+}
+    .popupcontainer{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        display: flex;
+        justify-content: right;
+        display: none;
+    }
+    .opencart{
+        display: flex;
+    }
+    .cartcrossbtn{
+        position: relative;
+        left: 163px;
+        top: 23px;
+        cursor: pointer;
+    }
+    .sidepopup p{
+        position: relative;
+        top: 95px;
+    }
+    .sidepopup{
+        height: 800px;
+        width: 400px;
+        display: block;
+        position: relative;
+        text-align: center;
+        font-size: 22px;
+        padding-top: 44px;
+        letter-spacing: 3px;
+        font-family: sans-serif;
+        color: #fff9;
+        font-weight: 600;
+        background: rgba(21, 20, 20, 0.7);
+    }
